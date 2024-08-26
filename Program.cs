@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ChuyenDoiNhietDo
 {
@@ -29,26 +29,26 @@ namespace ChuyenDoiNhietDo
             {
                 // Hiển thị menu lựa chọn
                 Console.WriteLine("Menu:");
-                Console.WriteLine("1. Fahrenheit to Celsius");
-                Console.WriteLine("2. Celsius to Fahrenheit");
+                Console.WriteLine("1. F sang C");
+                Console.WriteLine("2. C sang F");
                 Console.WriteLine("0. Exit");
-                Console.WriteLine("Enter your choice: ");
+                Console.WriteLine("Nhap Nhiet Do: ");
                 choice = Int32.Parse(Console.ReadLine());
 
                 switch (choice)
                 {
                     case 1:
                         // Chuyển đổi Fahrenheit sang Celsius
-                        Console.WriteLine("Enter Fahrenheit: ");
+                        Console.WriteLine("Nhap do F: ");
                         fahrenheit = Double.Parse(Console.ReadLine());
-                        Console.WriteLine("Fahrenheit to Celsius: " + FahrenheitToCelsius(fahrenheit));
+                        Console.WriteLine("F sang C: " + FahrenheitToCelsius(fahrenheit));
                         break;
 
                     case 2:
                         // Chuyển đổi Celsius sang Fahrenheit
-                        Console.WriteLine("Enter Celsius: ");
+                        Console.WriteLine("Nhap do C: ");
                         celsius = Double.Parse(Console.ReadLine());
-                        Console.WriteLine("Celsius to Fahrenheit: " + CelsiusToFahrenheit(celsius));
+                        Console.WriteLine("C sang F: " + CelsiusToFahrenheit(celsius));
                         break;
 
                     case 0:
@@ -58,7 +58,7 @@ namespace ChuyenDoiNhietDo
 
                     default:
                         // Trường hợp nhập lựa chọn không hợp lệ
-                        Console.WriteLine("Invalid choice. Please try again.");
+                        Console.WriteLine("Lua chon khong hop le, hay chon lai.");
                         break;
                 }
             } while (choice != 0); // Vòng lặp tiếp tục cho đến khi người dùng chọn thoát
